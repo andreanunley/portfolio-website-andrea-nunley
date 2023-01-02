@@ -1,0 +1,112 @@
+/*
+Colors used:
+Primary Color (Black): #141414;
+Secondary Color (Tan): #E8DEDB;
+Supplementary Color (Brown): #5A4D48;
+Supplementary Color (Dark Tan): #C1A98F;
+Supplementary Color (White): #FFFFFF;
+*/
+
+    body {
+    background-color: #141414;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #FFFFFF;
+  }
+  
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
+  h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.75em;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.75em;
+    font-weight: 400;
+  }
+  h4 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.35em;
+    font-weight: 400;
+  }
+
+  img {
+    width: 100%;
+  }
+  
+  a {
+    color: #E8DEDB;
+    text-decoration: none; /* No underlining */
+  }
+
+  a:visited { /* visited link */
+    color: #C1A98F;
+  }
+
+  a:hover {
+    color: #C1A98F;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+
+  a:focus {
+    color: #C1A98F;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+
+  a:active { /* selected link */
+    color: #E8DEDB;
+  }
+
+  .button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #141414;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #FFFFFF; /* width of the border, type, color */
+    border-top: 2px solid #FFFFFF; /* width of the border, type, color */
+    border-left: 2px solid #FFFFFF; /* width of the border, type, color */
+    border-right: 2px solid #FFFFFF; /* width of the border, type, color */
+    transition: 0.2s opacity;
+  }
+  .button:hover {
+    background-color: #FFFFFF;
+    color: #141414; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #141414; /* width of the border, type, color */
+    border-top: 2px solid #141414; /* width of the border, type, color */
+    border-right: 2px solid #141414; /* width of the border, type, color */
+    border-left: 2px solid #141414; /* width of the border, type, color */
+    transition: 0.2s opacity;
+    text-decoration: none;
+  }
+
+  .button:active {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #141414;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #FFFFFF; /* width of the border, type, color */
+    border-top: 2px solid #FFFFFF; /* width of the border, type, color */
+    border-left: 2px solid #FFFFFF; /* width of the border, type, color */
+    border-right: 2px solid #FFFFFF; /* width of the border, type, color */
+    transition: 0.2s opacity;
+  }
+
