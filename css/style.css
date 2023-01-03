@@ -7,6 +7,10 @@ Supplementary Color (Dark Tan): #C1A98F;
 Supplementary Color (White): #FFFFFF;
 */
 
+* {
+  box-sizing: border-box;
+}
+
     body {
     background-color: #141414;
     font-family: 'Raleway', sans-serif;
@@ -15,6 +19,7 @@ Supplementary Color (White): #FFFFFF;
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #FFFFFF;
   }
+  
   
   h1, h2, h3, h4 {
     line-height: 1.4;
@@ -56,7 +61,7 @@ Supplementary Color (White): #FFFFFF;
   }
 
   a:hover {
-    color: #C1A98F;
+    color: #FFFFFF;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
 
@@ -109,4 +114,89 @@ Supplementary Color (White): #FFFFFF;
     border-right: 2px solid #FFFFFF; /* width of the border, type, color */
     transition: 0.2s opacity;
   }
+
+
+  header{padding: 10px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */;
+    margin: 10px;
+    position: relative;
+    display: block;
+  }
+
+    #logo {
+      text-align: left;
+      width: 10%; 
+      max-width: 250px;
+      float: left;
+      position: relative;
+      margin: 10px 15px 15px 10px;
+    }
+    
+    #navigation {
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    float: right;
+    margin: 0;
+    overflow:hidden;
+    }
+
+  
+  nav ul{
+      margin: 0;
+      padding: 0;
+  }
+  
+  nav ul li{
+      list-style-type: none;
+  }
+  
+
+  nav > ul > li > a:visited{
+    color: #C1A98F;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover{
+  color: #FFFFFF;
+  display: block;
+  line-height: 2em;
+  padding: 0.5em 1em;
+  text-decoration: underline;
+}
+
+  nav > ul > li > a:active{
+      color: #E8DEDB;
+      display: block;
+      line-height: 2em;
+      padding: 0.5em 1em;
+      text-decoration: none;
+  }
+    
+  
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.hero {
+  display:block ;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+  text-align: left; /* Left align text */
+  padding-top: auto;
+}
+
+.img {width: 100%;
+height:"auto";
+}
 
