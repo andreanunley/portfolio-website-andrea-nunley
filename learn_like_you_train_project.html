@@ -24,6 +24,13 @@
 
 <style> @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,300;0,400;0,600;0,900;1,300;1,400;1,600;1,900&display=swap'); </style>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+  </style>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <script src="https://kit.fontawesome.com/84b2eb0a2a.js" crossorigin="anonymous"></script>
@@ -32,7 +39,7 @@
   
 <body>
   <header>
-    <div class="container">
+    <div>
       <img id="logo" src="img/new-logo-transparent.png" alt= Logo">
       <nav>
         <ul>
@@ -47,13 +54,16 @@
    
    
   <main>
-      <div id="work">
-       <div class="container">
         
             <div>
-                <h1>Learn Like You Train</h1>
-                    <p>Aiming to learn and practice using the design process to create a solution to empower busy users to learn new vocabulary.
-                        <br><img style="width: 50%" src="img/learn like you train hero image.png">
+                <h1 class="hero">Learn Like You Train</h1>
+                <div class="container">
+                    <p>Aiming to learn and practice using the design process to create a solution to empower busy users to learn new vocabulary.</p>
+                        <br>
+                        <img src="img/learn like you train hero image.png" style="width: 50%" class="center">
+                </div>
+
+          <div class="container">
                 <ul>
                     <li><b>Timeline</b></li>
                     <p>8+ weeks</p>
@@ -64,20 +74,20 @@
                 </ul>
                     </p> 
             </div>
+            <br>
 
 
-
+          <div class="container">
             <div>
-                <h3><b>Problem</b></h3>
+                <h3>Problem</h3>
                 <p>How might I design a mobile app that empowers people to learn new vocabulary on the go for quick study sessions?</p>
 
-                <br>
-                <h3><b>Hypothesis</b></h3>
+                <h3>Hypothesis</h3>
                 <p>By creating an app that teaches words in context, builds on learned vocabulary, gauges growth, and connects users, I will see an increase in users' vocabulary.</p>
             </div>
 
             <div>
-                <h3><b>Design Process</b></h3>
+                <h3>Design Process</h3>
                 <p>
                     <ol>
                         <li>EMPATHIZE</li>
@@ -91,31 +101,30 @@
 
             <div>
                 <h3><b>01 - EMPATHIZE</b></h3>
-                <h4>During this phase, I will get to know the target users and understand their needs, wants, and objectives.</h4>
+                <p>During this phase, I will get to know the target users and understand their needs, wants, and objectives.</p>
             </div>
 
             <div>
-                <h3><b>01.01 Competitive Analysis - Vocabulary, Vocab Junkie & Atlas English</b></h3>
+                <h3>01.01 Competitive Analysis - Vocabulary, Vocab Junkie & Atlas English</h3>
 
-                <img src="img/Vocabulary-logo.png">
+                <img src="img/Vocabulary-logo.png" alt="Vocabulary Logo" class="center">
                 <p>Vocabulary is a well-rounded, easy-to-use app with more positive than negative features. The goal is to learn new vocabulary words, which is met as they give the users new words with reminders as often as they may prefer. The user may also scroll down and learn word after the other without dedicated study time. The UX and UI sides of the design are clearly taken into action with an easy-to-use app that is beautifully created to draw users in and keep them engaged with reminders and customization.
                 </p>
 
-                <img src="img/Vocab-Junkie-logo.png">
+                <img src="img/Vocab-Junkie-logo.png" alt="Vocab Junkie Logo" class="center">
                 <p>Vocab Junkie works and is successful, as users can learn new vocabulary words from it. However, users will not use this app for extended periods of time. The designers did create different modes and success tracking, which is enticing but failed to make it appealing to the eye and bank accounts. With $4.99 for each set, most users would feel too much friction to continue and just move on to another app. Vocab Junkie only scratches the surface of UX design and lacks UI design throughout. Desirability is missing, and there are not many thoughts or feelings that arise as users accomplish their goals.
                 </p>
 
-                <img src="img/Atlas-English-logo.png">
+                <img src="img/Atlas-English-logo.png" alt="Atlas English Logo" class="center">
                 <p>Atlas English is a very successful product. It meets the user's goals and keeps them engaged by offering more levels of vocabulary knowledge. The designers were able to take the users' needs and find an easy-to-use solution that users could use for an extended period of time. This app exceeds the goals of user experience and user interface design, as it is useful, usable, and desirable. The users' learning is proven by passing each quiz, test, and exam, which encourages users to continue using the app and expanding their vocabulary.
                 </p>
             </div>
             
             <div>
-                <h3><b>01.02 User Research</b></h3>
-                <h4>I conducted in-person user interviews with five potential users to build a primary persona and inform the design.</h4>
-        
+                <h3>01.02 User Research</h3>
+                <p>I conducted in-person user interviews with five potential users to build a primary persona and inform the design.</p>
                 <div>
-                    <b>Interview Findings</b>
+                    <p><strong><center>Interview Findings</center></strong>
                     <br>
 
                     <b>Doing</b>
@@ -143,26 +152,27 @@
                         <li>"I feel like a lot of apps lack in showing progress."</li>
                         <li>"I feel like I am more engaged if there are building blocks that slowly get harder."</li>
                     </ul>
+                    </p>
                 </div>
             </div>
 
             <div>
                    <div>
                         <h3><b>02 - DEFINE</b></h3>
-                        <h4>I will analyze and organize the insights from my research to create a persona to define the problem statement and hypothesis.</h4>
+                        <p>I will analyze and organize the insights from my research to create a persona to define the problem statement and hypothesis.</p>
                    </div> 
                     
         
                     <div>
-                        <h3><b>02.01 Persona</b></h3>
-                        <h4>I created a persona based on user interviews to better understand our users' goals, needs, experiences, and behaviors.</h4>
+                        <h3>02.01 Persona</h3>
+                        <p>I created a persona based on user interviews to better understand our users' goals, needs, experiences, and behaviors.</p>
                     </div>
 
                     <div>
                         <p>Anna Thompson “I am driven and capable but need an app that will encourage me and help me retain new vocabulary.”</p>
                         <br>
-                        <img src="img/anna-persona.png">
-
+                        <img src="img/anna-persona.png" class="center">
+                        <br>
                             <ul>
                             <li>29 years old</li>   
                             <li>Living in California</li>   
@@ -203,13 +213,13 @@
                                 <li>As I learn new vocabulary, I will feel more confident, so I can ask for more challenges.</li>
                                 <li>When in photoshoots, I want to have the right words so I can translate the exact emotions conveyed by the photographs.</li>
                             </ul>
-                            <br>
+                            <p>
                             <b>Problem statement</b>
-                            <br>
+                            </p>
                             Anna needs a way to expand her vocabulary, retain it and stay motivated because she wants to feel more confident when speaking to new clients and needs to improve the storytelling aspect of her job so that she can continue to grow in her career path. We will know this to be true when we see Anna's development within the app and, as a result, in her career.
-                            <br>
+                            <p>
                             <b>Hypothesis Statement</b>
-                            <br>
+                            </p>
                             We believe that by creating an app that teaches words in context, builds on learned vocabulary, gages growth, and connects users for Anna, we will see an increase in Anna's vocabulary as well as confidence leading to professional and personal development.
                         </p>
                     </div>
@@ -217,12 +227,12 @@
 
             <div>
                 <div>
-                    <h3><b>03 - IDEATE</b></h3>
-                    <h4>I will begin conceptualizing how to organize content and present information to users to solve the problem.</h4>
+                    <center><h3><b>03 - IDEATE</b></h3></center>
+                    <p>I will begin conceptualizing how to organize content and present information to users to solve the problem.</p>
                </div> 
 
                 <div>
-                    <h3><b>03.01 Information Architecture</b></h3>
+                    <center><h3>03.01 Information Architecture</h3></center>
                 </div>
 
                 <div>
@@ -233,13 +243,13 @@
                             <li>Entry point: App home page.</li>
                             <li>Success Criteria: The user is able to begin using the app. </li>
                         </ul>
-                        <img src="img/task-analysis-1.png">
+                        <div style="text-align:center"><img src="img/task-analysis-1.png"></div>
                     
                         User Flow 1
                         <ul>
                             <li>User goal: Getting started using the app.</li>
                         </ul>
-                        <img src="img/userflow-1.png"
+                        <img src="img/userflow-1.png" class="center">
                     </p>
 
                     <p>
@@ -254,7 +264,7 @@
                         <ul>
                             <li>User goal: Add a specific word to learn.</li>
                         </ul>
-                        <img src="img/userflow-2.png">
+                        <img src="img/userflow-2.png" class="center">
                     </p>
 
                     <p>
@@ -269,7 +279,7 @@
                         <ul>
                             <li>User goal: Add a friend and see their progress in the app.</li>
                         </ul>
-                        <img src="img/userflow-3.png">
+                        <img src="img/userflow-3.png" class="center">
                     </p>
 
                     <p>
@@ -284,7 +294,7 @@
                         <ul>
                             <li>User goal: Add a daily reminder to practice new vocabulary.</li>
                         </ul>
-                        <img src="img/userflow-4.png">
+                        <img src="img/userflow-4.png" class="center">
                     </p>                    
 
                 </div>
@@ -292,300 +302,331 @@
 
             <div>
                 <div>
-                    <h3><b>04 - PROTOTYPE</b></h3>
-                    <h4>I will build a more physical system around our user flows by creating effective wireframes and a prototype that supports our user goals.</h4>
+                    <center><h3><b>04 - PROTOTYPE</b></h3></center>
+                    <p>I will build a more physical system around our user flows by creating effective wireframes and a prototype that supports our user goals.</p>
                </div> 
 
                 <div>
-                    <h3><b>04.01 Wireframes</b></h3>
+                    <center><h3><b>04.01 Wireframes</b></h3></center>
                 </div>
 
                 <div>
-                    <b>Onboarding</b>
-                    <div class="container">
-                        <div class="image">
+                   <h4>Onboarding</h4>
+                  
+                    <div>
+                        <div class="center">
                           <img src="img/Splash-screen.png">
                         </div>
-                        <div class="text">
+                    <div>
                           <p>Splash screen: I have chosen to use an in-app guide for onboarding. This showcases key workflows that make my solution valuable and useful for driving full product adoption.</p>
-                        </div>
                     </div>
+                    </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/Word-of-the-day.png">
                         </div>
-                        <div class="text">
+                        <div>
                           <p>Word of the Day: Users will be able to see the definition of the word of the day, the word in context, synonyms, hear the pronunciation, and a related gif. Research demonstrated that users learned words better when they were shown more options than just a definition.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/Weekly-Quiz-Find-Your-Crew.png">
                         </div>
-                        <div class="text">
+                        <div>
                           <p>Weekly Quiz & Find Your Crew: I included a social aspect to the app to increase retention. Research shows that users are more likely to use an app if there is a way to compete with their friends. Here they can add friends and compare their scores each week they take the weekly quiz.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/train-your-brain-screen.png">
                         </div>
-                        <div class="text">
+                        <div>
                           <p>Train Your Brain: This screen will allow users to add more words they want to learn, organize words into stacks and see previous weekly stacks. This will be key for users to learn not only more vocabulary but master words they want to use on a regular basis.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/My-account.png">
                         </div>
-                        <div class="text">
+                        <div>
                           <p>My Account: Research shows users are more likely to continue using an app if they are seeing growth and are encouraged to continue. For that reason, I added levels users could grow from and to and see how far along they have left. I also added badges to continuously encourage users to meet certain goals.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/Set-notification.png">
                         </div>
-                        <div class="text">
+                        <div>
                           <p>Set notifications: Research showed users want to be notified to remember to use an app, so I made sure to include setting notifications as a part of the onboarding process.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/Customize-settings.png">
                         </div>
-                        <div class="text">
+                        <div>
                           <p>Notification Settings: Based on research, I knew that although users want notifications, they want them to be extremely customizable so that they are helpful instead of bothersome. Therefore, we included several criteria for the notifications users would like to see.</p>
                      </div>
                     </div>
                 </div>
+                <br>
+              
 
                 <div>
-                    <b>Register</b>
-                    <div class="container">
-                        <div class="image">
+                    <h4>Register</h4>
+                    <div>
+                        <div class="center">
                           <img src="img/login-or-register.png">
                         </div>
-                        <div class="text">
+                        <div>
                           <p>Intro screen. Log in or register.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/quiz-intro.png">
                         </div>
-                        <div class="text">
+                        <div>
                           <p>User intro for 2-minute vocabulary quiz: I added a vocabulary quiz to gauge our users’
                             current vocabulary before learning on the app. This is helpful so that users are placed on a level that is not too easy or difficult but engaging and helpful. I also made sure to explain why a quiz in order to reduce any points of friction.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/quiz-instructions.png">
                         </div>
-                        <div class="text">
+                        <div>
                           <p>Instructions for the 2-minute vocabulary quiz: I added instructions to ensure users knew what to expect during the quiz.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/quiz.png">
                         </div>
-                        <div class="text">
+                        <div>
                           <p>Quiz: Here is an example of the layout of a quiz question.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/congratulations-screen.png">
                         </div>
-                        <div class="text">
+                        <div>
                           <p>Congratulations Screen: I added a congratulations screen to showcase the users' vocabulary level in a way that evokes encouragement.
                             </p>
                         </div>
                     </div>
-                </div>
+                    <br>
 
-                <div>
-                    <b>Adding a custom word and a new stack</b>
-                    <div class="container">
-                        <div class="image">
+            
+                    <div>
+                    <h4>Adding a custom word and a new stack</h4>
+                    <div>
+                        <div class="center">
                           <img src="img/train-your-brain-screen.png">
                         </div>
-                        <div class="text">
+                        <div>
                           <p> Train Your Brain Screen: Users will be able to add new stacks or new words through this screen. Research showed users want the ability to add their own words to learn.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/My-stacks.png">
                         </div>
-                        <div class="text">
+                        <div>
                           <p>My stacks: Users can add a new word to a new stack of words or a current stack of words. Giving users options for organization will help users access the right words faster, leading to more time to learn.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/Add-new-stack.png">
                         </div>
-                        <div class="text">
+                        <div>
                           <p>Add New Stack: Users can choose their own name for a stack of words giving them the freedom to title it however they will remember it best.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/Add-new-word.png">
                         </div>
-                        <div class="text">
+                        <div>
                           <p>Add New Word: I gave users the same spots to fill out as the ones in the word of the day, this will allow users to fill out the context for the word, increasing their retention of the word.</p>
                         </div>
                     </div>
-                </div>
+                    <br>
+                
 
-                <div>
-                    <b>Add a Friend</b>
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                    <h4>Add a Friend</h4>
+
+                    <div>
+                        <div class="center">
                           <img src="img/Weekly-Quiz-and-Connect-with-Friends.png">
                         </div>
-                        <div class="text">
+                        <div>
                           <p>Weekly Quiz and Connect with Friends Screen: This screen allows users to take the weekly quiz, see their stats, add friends and compare stats. Research showed the need of a social aspect in the app for users to be eager to use the app. Including quizzes with friends will encourage users to learn more words to be prepared for the weekly quiz to compete with their friends leading to an increase of usage and retainment.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/Search-for-Friends.png">
                         </div>
-                        <div class="text">
+                        <div>
                             <p>Search for Friends: Users will be able to search for friends using several methods like username or name.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/Found-friend.png">
                         </div>
-                        <div class="text">
+                        <div>
                             <p>Found Friend: Once they find the friend they are looking for, they can simply add them with the click of a button.</p>
                         </div>
                     </div>
-                </div>
+                    <br>
+                
 
                 <div>
-                    <b>Review Vocabulary</b>
-                    <div class="container">
-                        <div class="image">
+                    <h4>Review Vocabulary</h4>
+                    <div>
+                        <div class="center">
                           <img src="img/train-your-brain-screen.png">
                         </div>
-                        <div class="text">
+                        <div">
                             <p>Train Your Brain Screen: On this screen, users can access their vocabulary stacks and review their words.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/Weekly-stacks.png">
                         </div>
-                        <div class="text">
+                        <div>
                             <p>Weekly Stacks: A list of the most recent stacks will appear with the option to see more.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/current-week.png">
                         </div>
-                        <div class="text">
+                        <div>
                             <p>Current Week: After selecting a stack, the user can click to view each word to review it.</p>
                         </div>
                     </div>
+                    <br>
                     
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/review-word.png">
                         </div>
-                        <div class="text">
+                        <div>
                             <p>Review Word: Here, the user will be able to review the word with as much context as possible. Research showed that context would help users understand the word better, making the word easier to learn.</p>                                
                         </div>
                     </div>
-                </div>
+                    <br>
+                
 
                 <div>
-                    <b>Review Vocabulary as flashcards</b>
-                    <div class="container">
-                        <div class="image">
+                    <h4>Review Vocabulary as Flashcards</h4>
+                    <div>
+                        <div class="center">
                           <img src="img/train-your-brain-screen.png">
                         </div>
-                        <div class="text">
+                        <div>
                             <p>Train Your Brain Screen: Like in the previous flow, users will have their choice of stacks here.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/Weekly-stacks.png">
                         </div>
-                        <div class="text">
+                        <div>
                             <p>Weekly Stacks: The most recent weeks will be showcased with the option to see past weeks.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/View-as-flashcards.png">
                         </div>
-                        <div class="text">
+                        <div>
                             <p>View as Flashcards: Users can also choose to review words as flashcards. Research shows that a majority of users choose flashcards as their primary method for memorizing.</p>
                         </div>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/Flashcard-front.png">
                         </div>
-                        <div class="text">
+                        <div>
                             <p>Flashcard Example Front: The flash card will have a count of the words in that stack, so the users know their proximity to the end. Users will also be also to skip a word or go back to a word and simply tap to see the word's definition.</p>
                     </div>
+                    <br>
 
-                    <div class="container">
-                        <div class="image">
+                    <div>
+                        <div class="center">
                           <img src="img/Flashcard-back.png">
                         </div>
-                        <div class="text">
+                        <div>
                             <p>Flashcard Example Back: The back of the flashcard shows a quick definition and a sentence using the word. Flashcards are meant to be a quick way to learn, which is why I refrained from adding more information to the back of it.</p>
                         </div>
                     </div>
+                    <br>
 
                 </div>
 
                 <div>
-                    <h4>Mid-fidelity Prototype</h4>
-                    <iframe src="https://marvelapp.com/prototype/91ggcd0?emb=1&iosapp=false&frameless=false" width="253" height="464" allowTransparency="true" frameborder="0" style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"></iframe>
+                    <center><h3>Mid-fidelity Prototype</h3></center>
+                    <center><iframe src="https://marvelapp.com/prototype/91ggcd0?emb=1&iosapp=false&frameless=false" width="253" height="464" allowTransparency="true" frameborder="0" style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"></center></iframe>
                 </div>
             </div>
 
             <div>
                 <div>
-                    <h3><b>05 - TEST</b></h3>
-                    <h4>I will test our prototype on users to evaluate its usefulness. Usability testing will allow me to see how real people interact with it to determine whether it serves its intended purpose.</h4>
+                    <center><h3><b>05 - TEST</b></h3></center>
+                    <p>I will test our prototype on users to evaluate its usefulness. Usability testing will allow me to see how real people interact with it to determine whether it serves its intended purpose.</p>
                </div> 
 
                 <div>
-                    <h3><b>Usability Test Plan</b></h3>
+                    <h3>Usability Test Plan</h3>
                     <p>
                         <ul>
                             <li>Scope: Testing “Learn like you Train” vocabulary app.</li>
@@ -607,14 +648,14 @@
                 </div>
 
                 <div>
-                    <h3><b>Usability Test Script</b></h3>
+                    <center><h3><b>Usability Test Script</b></h3></center>
                     <p>Hi, ______. My name is Andrea Nunley, and I will walk you through this session today. I am conducting usability tests to better evaluate how well my prototype empowers people to learn new vocabulary. The session should take approximately 10 - 15 minutes. This is not a test. You can’t do or say anything wrong here. You will be testing an incomplete prototype that likely has errors and mistakes - that’s why we’re testing it out! As you use the prototype, I will ask you as much as possible to think aloud: to say what you’re looking at, what you’re trying to do, and what you’re thinking. If you have any questions as we go along, ask them. I may not be able to answer them right away since we’re interested in how people do when they don’t have someone sitting next to them to help, but I will answer any non-prototype flow-related questions. All right, let's do this!
                     </p>
                 </div>
 
                 <div>
-                    <h3><b>Usability Test Script Tasks</b></h3>
-                    <ul><li>Direct Tasks</li></ul>
+                    <center><h3><b>Usability Test Script Tasks</b></h3></center>
+                    <p>Direct Tasks</p>
                     <ol>
                         <li>Register and begin using the app.</li>
                         <li>Add a note to the word of the day.</li>
@@ -623,7 +664,7 @@
                         <li>Review a weekly stack as flashcards.</li>
                     </ol>
                     <br>
-                    <ul><li>Scenario Tasks</li></ul>
+                    <p>Scenario Tasks</p>
                     <ol>
                         <li>You want to learn more vocabulary and download our app “Learn like you Train.” Create an account to start using the app.</li>
                         <li>You are looking around the app and come across the word of the day. You remember a person when you read the definition. Add that note to the word of the day.</li>
@@ -634,7 +675,7 @@
                 </div>
 
                 <div>
-                    <h3><b>Usability Test Report</b></h3>
+                    <center><h3><b>Usability Test Report</b></h3></center>
                     <table>
                         <tr><b>
                           <th>Task</th>
@@ -698,99 +739,103 @@
                         </tr>
                     </table>
                 </div>
+                <br>
 
                 <div>
-                    <h3<b>Prototype Revisions</b></h3>
+                    <center><h3<b>Prototype Revisions</b></h3></center>
                     <br>
 
                     <div>
-                        <p>Task 1 Revisions</p>
+                        <center><h4>Task 1 Revisions</h4></center>
 
-                        <div class="container">
-                          <div class="image">
+                        <div>
+                          <div class="center">
                             <img src="img/task-1-revisions-3.png">
                           </div>
                           <div class="text">
                               <p>Added a welcome to the app's tutorial screen and moved onboarding to after the user creates an account.</p>
                           </div>
                         </div>
+                        <br>
 
-                        <div class="container">
-                          <div class="image">
+                        <div>
+                          <div class="center">
                             <img src="img/task-1-revisions-2.png">
                           </div>
-                          <div class="text">
+                          <div>
                               <p>Added a welcome to the app screen after onboarding and setting the first notification.</p>
                           </div>
                         </div>
+                        <br>
 
-                        <div class="container">
-                          <div class="image">
+                        <div>
+                          <div class="center">
                             <img src="img/task-1-revisions-4.png">
                           </div>
-                          <div class="text">
+                          <div>
                               <p>Reduced the wording before the vocabulary quiz.</p>
                           </div>
                         </div>
+                        <br>
                     </div>  
 
                     <div>
-                      <p>Task 2 Revisions</p>
+                      <center><h4>Task 2 Revisions</h4></center>
 
-                      <div class="container">
-                        <div class="image">
+                      <div>
+                        <div class="center">
                           <img src="img/task-2-revisions-1.png">
                         </div>
-                        <div class="text">
+                        <div>
                             <p>Added “today” to the calendar's icon for users to easily know where the word of the day is.</p>
                         </div>
                       </div>
+                      <br>
 
-                      <div class="container">
-                        <div class="image">
+                      <div>
+                        <div class="center">
                           <img src="img/task-2-revisions-2.png">
                         </div>
-                        <div class="text">
+                        <div>
                             <p>Added the word “note” so it would be easier to remember where to add a note for the users.</p>
                         </div>
                       </div>
-                      </div>
+                      <br>
 
 
                       <div>
-                        <p>Task 4 Revisions</p>
+                        <center><h4>Task 4 Revisions</h4></center>
   
-                        <div class="container">
-                          <div class="image">
+                        <div>
+                          <div class="center">
                             <img src="img/task-4-revisions-2.png">
                           </div>
-                          <div class="text">
+                          <div>
                               <p>Added a new menu icon throughout the whole app to have the ability to add a word from anywhere, and moved the quiz of the week to under the "Train Your Brain" screen to create space for the new menu icon to add words and stacks more efficiently and quicker.</p>
                           </div>
                         </div>
                       </div>
 
                       <div>
-                        <p>Task 5 Revisions</p>
-  
-                        <div class="container">
-                          <div class="image">
+                        <center><h4>Task 5 Revisions</h4></center>  
+                        <div>
+                          <div class="center">
                             <img src="img/task-5-revisions-2.png">
                           </div>
-                          <div class="text">
+                          <div>
                               <p>Changed the stacks system and reduced the number of stacks shown on the first screen of stacks.</p>
                           </div>
                         </div>
-                      </div>
+                      
 
-                      <div class="container">
-                        <div class="image">
-                          <img src="img/task-5-revisions-4.png">
+                        <div>
+                          <div class="center">
+                            <img src="img/task-5-revisions-4.png">
+                          </div>
+                          <div>
+                              <p>Added an icon to the front of the flashcards for users to know to tap to flip.</p>
+                          </div>
                         </div>
-                        <div class="text">
-                            <p>Added an icon to the front of the flashcards for users to know to tap to flip.</p>
-                        </div>
-                      </div>
                     </div>
                       
                   </div>  
@@ -799,10 +844,10 @@
                 </div>
             </div>
             
-            <div class="container">
+            <div>
               <div>
-                  <h3><b>NEXT STEPS</b></h3>
-                  <h4>Through the user-centered designing of this vocabulary application, I was able to define our user, their goals, and pain points and design and test a solution to their need.</h4>
+                  <center><h3><b>NEXT STEPS</b></h3></center>
+                  <p>Through the user-centered designing of this vocabulary application, I was able to define our user, their goals, and pain points and design and test a solution to their need.</p>
              </div> 
 
               <div>

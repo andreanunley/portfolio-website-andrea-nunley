@@ -28,6 +28,7 @@ Supplementary Color (White): #FFFFFF;
     font-family: 'Libre Baskerville', serif;
     font-size: 2.75em;
     font-weight: 700;
+    line-height: 2;
   }
   
   h2 {
@@ -124,11 +125,12 @@ Supplementary Color (White): #FFFFFF;
 
     #logo {
       text-align: left;
-      width: 10%; 
+      width: 5%; 
       max-width: 250px;
+      min-width: 50px;
       float: left;
       position: relative;
-      margin: 10px 15px 15px 10px;
+      margin: 10px 10px 10px 10px;
     }
     
     #navigation {
@@ -180,12 +182,28 @@ nav > ul > li > a:hover{
 /* Layout styling */
 
 .container {
-  padding: 0 15px;
+  padding: 0 50px;
 }
 
 .hero {
   display:block ;
+  padding-top: 100px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+  padding-right: 200px;
+  margin-bottom: 0px;
+  text-align: center;
+  
 }
+
+.hero-container {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 200px;
+
+}
+
 
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
@@ -193,10 +211,15 @@ nav > ul > li > a:hover{
 
 #hero h1 {
   text-align: left; /* Left align text */
-  padding-top: auto;
 }
 
-.img {width: 100%;
+.img {width: 50%;
 height:"auto";
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
