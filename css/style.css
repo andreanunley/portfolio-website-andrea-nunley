@@ -20,7 +20,6 @@ Supplementary Color (White): #FFFFFF;
     color: #FFFFFF;
   }
   
-  html{ width: 100% !important;}
   
   h1, h2, h3, h4 {
     line-height: 1.4;
@@ -36,6 +35,7 @@ Supplementary Color (White): #FFFFFF;
     font-family: 'Libre Baskerville', serif;
     font-size: 2.25em;
     font-weight: 700;
+    margin: 20px, 20px;
   }
   
   h3 {
@@ -117,6 +117,48 @@ Supplementary Color (White): #FFFFFF;
     transition: 0.2s opacity;
   }
 
+  .button-two {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #141414;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #141414; /* width of the border, type, color */
+    border-top: 2px solid #141414; /* width of the border, type, color */
+    border-left: 2px solid #141414; /* width of the border, type, color */
+    border-right: 2px solid #141414; /* width of the border, type, color */
+    transition: 0.2s opacity;
+  }
+  .button-two:hover {
+    background-color: #FFFFFF;
+    color: #141414; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #FFFFFF; /* width of the border, type, color */
+    border-top: 2px solid #FFFFFF; /* width of the border, type, color */
+    border-right: 2px solid #FFFFFF; /* width of the border, type, color */
+    border-left: 2px solid #FFFFFF; /* width of the border, type, color */
+    transition: 0.2s opacity;
+    text-decoration: none;
+  }
+
+  .button-two:active {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #141414;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #141414; /* width of the border, type, color */
+    border-top: 2px solid #141414; /* width of the border, type, color */
+    border-left: 2px solid #141414; /* width of the border, type, color */
+    border-right: 2px solid #141414; /* width of the border, type, color */
+    transition: 0.2s opacity;
+  }
+
+
 
   header{padding: 10px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */;
     margin: 10px;
@@ -132,25 +174,28 @@ Supplementary Color (White): #FFFFFF;
       float: left;
       position: relative;
       margin: 10px 10px 10px 10px;
+      padding-left: 14px;
     }
     
-    #navigation {
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: 400;
-    float: right;
-    margin: 0;
-    overflow:hidden;
+    .topnav{
+      float: right;
+      color: #E8DEDB;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
     }
-
   
   nav ul{
       margin: 0;
-      padding: 0;
+      padding: 20px;
   }
   
   nav ul li{
       list-style-type: none;
+      display: inline;
+      padding: 10px;
   }
   
 
@@ -221,6 +266,10 @@ nav > ul > li > a:hover{
   text-align: left; /* Left align text */
 }
 
+#hero {
+  padding-bottom: 80px;
+}
+
 .img {width: 50%;
 height:"auto";
 }
@@ -232,6 +281,27 @@ height:"auto";
   width: 30%;
 }
 
+.center-align {
+  text-align: center;
+}
+
+.footer-buttons {
+  float: right;
+  padding-right: 30px;
+}
+
+footer {
+  padding-bottom: 100px;
+  padding-top: 75px;}
+  
+  #footerlogo {
+    text-align: left;
+    width: 10%; 
+    max-width: 250px;
+    min-width: 50px;
+    float: left;
+  }
+
 /* ==============================
 Small devices (600px and smaller)
 ================================= */
@@ -239,26 +309,67 @@ Small devices (600px and smaller)
   .hero {
   display:block ;
   padding-top: 50px;
-  padding-bottom: 25px;
-  padding-left: 50px;
-  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-bottom: 0px;
+  border-bottom: 0px;
   text-align: center;
 }
 
 .hero-container {
-  padding-top: 75px;
-  padding-bottom: 50px;
-  padding-left: 50px;
+  padding-top: 175px;
+  padding-bottom: 175px;
+  padding-right: 30px;
+  padding-left: 30px;
   padding-right: 50x;
   border-left: 0px;
   border-right: 0px;
   text-size-adjust: auto;
 }
 
+.img {
+  width: 100%;
 }
 
-/* ==============================
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+#hero {
+  padding-bottom: 0px;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+.footer-buttons {
+  padding-right: 30px;
+}
+
+footer {
+  padding-bottom: 20px;
+  padding-top: 20px;}
+  
+  #footerlogo {
+    width: 30%; 
+    max-width: 250px;
+    min-width: 50px;
+    display: block;
+  }
+
+
+
+ /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
@@ -266,12 +377,41 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
-  [class*="col-"] {
-    float: left;
-    padding: 10px;
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
-  #about-page h3 {margin-top: 0;}
-  #about-page h4 {margin-top: 0;}
+
+  body {
+    font-size: 18px; /* Sets the font size to 18px */
+  }
+
+  .hero-container {
+    padding-top: 175px;
+    padding-bottom: 175px;
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 50x;
+    border-left: 0px;
+    border-right: 0px;
+    text-size-adjust: auto;
+  }
+
+  .hero {
+    display:block ;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    text-align: center;
+  }
+
+
 }
 
 /* ==============================
@@ -284,4 +424,4 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
 }
-
+}
