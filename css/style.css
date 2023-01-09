@@ -174,22 +174,20 @@ Supplementary Color (White): #FFFFFF;
       float: left;
       position: relative;
       margin: 10px 10px 10px 10px;
-      padding-left: 14px;
     }
     
     .topnav{
       float: right;
       color: #E8DEDB;
       text-align: center;
-      padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
       display: block;
+      padding: 0px;
     }
   
   nav ul{
       margin: 0;
-      padding: 20px;
   }
   
   nav ul li{
@@ -229,6 +227,18 @@ nav > ul > li > a:hover{
 
 .container {
   padding: 0 50px;
+}
+
+
+.hero-inner {
+  display:block ;
+  padding-top: 100px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0px 0px;
+  text-align: center;
+
 }
 
 .hero {
@@ -306,7 +316,8 @@ footer {
 Small devices (600px and smaller)
 ================================= */
 @media only screen and (max-width: 600px) { 
-  .hero {
+  
+.hero {
   display:block ;
   padding-top: 50px;
   padding-bottom: 0px;
@@ -362,7 +373,7 @@ footer {
   
   #footerlogo {
     width: 30%; 
-    max-width: 250px;
+    max-width: 150px;
     min-width: 50px;
     display: block;
   }
@@ -376,6 +387,10 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
   }
 
   .row::after {
@@ -418,10 +433,23 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  
+  .col-lg-5 {width: 50%;}
+  .col-lg-7 {width: 50%;}
+
+  [class*="col-"] {
+    float: left;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
-}
-}
+
+#about-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;}
