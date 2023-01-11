@@ -22,47 +22,53 @@
 
   
 <body>
-  <header>
-    <div>
-      <img id="logo" src="img/new-logo-transparent.png" alt= Logo">
-      <nav>
-        <ul class="topnav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="learn_like_you_train_project.html">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-   
+  <div class="section">
+    <header>
+      <div>
+        <img id="logo" src="img/new-logo-transparent.png" alt= Logo">
+        <nav>
+          <ul class="topnav">
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="learn_like_you_train_project.html">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
    
 <main>
-<div id="about-page">
+<div>
           <h1 class="hero-inner">About Me.</h1>
       <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-5">
           <p>I'm Andrea, a UX designer with a background in project management and experience with creative solutions and problem-solving, along with keen attention to detail and effective communication. I have a proven record of optimizing processes, coordinating schedules, events, and determining and exceeding client needs. In my free time, you can find me hanging out with friends, baking, working out, or checking out the new spot in town. Check out my resume or download it below.</p> 
-            <br>
-            <a href="files/AndreaNunley_UX.pdf" class="button">Download CV</a>
+          <br>
+          <a href="files/Andrea-Nunley-UX-Designer.pdf" class="button">Download CV</a>
+        </div>
+
+          <div class="col-md-6 col-lg-7">
+          <img src="img/about-final.png">
+          </div>
+        </div>
+          
       </div>  
        <br>
     <div>
         <div class="container">
-          <div class="row"></div>
                 <h3> 
                     <b>Skills</b> 
                 </h3> 
-          </div>
         </div>
 
         <div class="container">
-           <div class="row col-md-6 col-lg-7">
+           <div class="row">
+           <div class="col-md-6 col-lg-5">
                 <h4> 
                     <b>Tools</b> 
                 </h4> 
-           </div>
 
-            <div class="row col-md-6 col-lg-7">
                 <ul>
                         <li>Figma</li>
                         <li>Adobe XD</li>
@@ -76,20 +82,13 @@
                         <li>OptimalSort</li>
                         <li>UsabilityHub</li>
                 </ul>
-            </div>
-         </div>
+           </div>
 
-         <div>
-            <div class="container">
-              <div class="row col-md-6 col-lg-5">
+            <div class="col-md-6 col-lg-7">
                  <h4> 
                      <b>Technology</b> 
                  </h4> 
-              </div>
-            </div>
- 
-             <div class="container">
-              <div class="row col-md-6 col-lg-5">
+          
                  <ul>
                          <li>User Experience Design</li>
                          <li>Prototyping</li>
@@ -103,26 +102,37 @@
                  </ul>
              </div>
           </div>
+          </div>
       </div>
 </div>
 </main>
 
-<hr style="width:95%">
-<footer>
-  <div id="footer">
+<br>
+<br>
+<br>
 
-    <div class="container">
-      <img style="float: left;" id="footerlogo" src="img/new-logo-transparent.png" alt= Logo">
+<hr class="hr">
+  <footer>
+    <div id="footer">
+<br>
+      <div class="container-work">
+        <img style="float: left;" id="footerlogo" src="img/new-logo-transparent.png" alt= Logo">
+      </div>
+
+      <div class="footer-buttons">
+        <a style="float: right;" href="mailto:andreanunley.uxd@gmail.com" class="button"><i class="fa-solid fa-envelope"></i> Email Me</a>
+        <a style="float: right;" href="https://www.linkedin.com/in/andrea-nunley-uxd/" class="button-two"><i class="fa-brands fa-linkedin"></i> LinkedIn </a>
+      </div>
+  
+      <br>
     </div>
+  </footer>
+<br>
+<br>
 
-    <div class="row col-md-6 footer-buttons">
-      <a href="https://www.linkedin.com/in/andrea-nunley-uxd/" class="button-two"><i class="fa-brands fa-linkedin"></i> LinkedIn </a>
-      <a href="mailto:andreanunley.uxd@gmail.com" class="button"><i class="fa-solid fa-envelope"></i> Email Me</a>
-    </div>
-
-    <br>
-  </div>
-</footer>
+  <div class="container">
+    <center><p>Copyright Andrea Nunley 2022</p></center>
+</div>
 
 </body>
 </html>

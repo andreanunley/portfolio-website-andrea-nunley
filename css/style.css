@@ -24,16 +24,17 @@ Supplementary Color (White): #FFFFFF;
   h1, h2, h3, h4 {
     line-height: 1.4;
   }
+
   h1 {
     font-family: 'Libre Baskerville', serif;
-    font-size: 2.75em;
+    font-size: 3.35em;
     font-weight: 700;
     line-height: 2;
   }
   
   h2 {
     font-family: 'Libre Baskerville', serif;
-    font-size: 2.25em;
+    font-size: 2.50em;
     font-weight: 700;
     margin: 20px, 20px;
   }
@@ -41,7 +42,7 @@ Supplementary Color (White): #FFFFFF;
   h3 {
     font-family: 'Libre Baskerville', serif;
     font-size: 1.75em;
-    font-weight: 400;
+    font-weight: 700;
   }
   h4 {
     font-family: 'Libre Baskerville', serif;
@@ -159,8 +160,7 @@ Supplementary Color (White): #FFFFFF;
   }
 
 
-
-  header{padding: 10px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */;
+  header{
     margin: 10px;
     position: relative;
     display: block;
@@ -182,8 +182,11 @@ Supplementary Color (White): #FFFFFF;
       text-align: center;
       text-decoration: none;
       font-size: 17px;
-      display: block;
       padding: 0px;
+      padding-top: 0px;
+      margin-right: 10px;
+      vertical-align: middle;
+      font-weight: 500;
     }
   
   nav ul{
@@ -199,28 +202,15 @@ Supplementary Color (White): #FFFFFF;
 
   nav > ul > li > a:visited{
     color: #C1A98F;
-    display: block;
-    line-height: 2em;
-    padding: 0.5em 1em;
     text-decoration: none;
 }
 
 nav > ul > li > a:hover{
   color: #FFFFFF;
-  display: block;
-  line-height: 2em;
-  padding: 0.5em 1em;
   text-decoration: underline;
 }
 
-  nav > ul > li > a:active{
-      color: #E8DEDB;
-      display: block;
-      line-height: 2em;
-      padding: 0.5em 1em;
-      text-decoration: none;
-  }
-    
+.hr {width: 90%;}
   
 
 /* Layout styling */
@@ -232,31 +222,12 @@ nav > ul > li > a:hover{
 
 .hero-inner {
   display:block ;
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 25px;
   padding-left: 50px;
   padding-right: 50px;
   margin: 0px 0px;
-  text-align: center;
-
-}
-
-.hero {
-  display:block ;
-  padding-top: 100px;
-  padding-bottom: 25px;
-  padding-left: 50px;
-  padding-right: 200px;
-  margin-bottom: 0px;
-  text-align: center;
-  
-}
-
-.hero-container {
-  padding-top: 150px;
-  padding-bottom: 100px;
-  padding-left: 50px;
-  padding-right: 200px;
+  text-align: left;
 
 }
 
@@ -288,7 +259,6 @@ height:"auto";
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
 }
 
 .center-align {
@@ -304,47 +274,23 @@ footer {
   padding-bottom: 100px;
   padding-top: 75px;}
   
-  #footerlogo {
-    text-align: left;
-    width: 10%; 
-    max-width: 250px;
-    min-width: 50px;
-    float: left;
-  }
-
-/* ==============================
-Small devices (600px and smaller)
-================================= */
-@media only screen and (max-width: 600px) { 
-  
-.hero {
-  display:block ;
-  padding-top: 50px;
-  padding-bottom: 0px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-bottom: 0px;
-  border-bottom: 0px;
-  text-align: center;
-}
 
 .hero-container {
-  padding-top: 175px;
-  padding-bottom: 175px;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-right: 50x;
+  padding-top: 150px;
+  padding-bottom: 75px;
+  padding-right: 50px;
+  padding-left: 50px;
   border-left: 0px;
   border-right: 0px;
   text-size-adjust: auto;
 }
 
 .img {
-  width: 100%;
+  width: 70%
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 h2 {
@@ -354,6 +300,11 @@ h2 {
 h3 {
   font-size: 20px;
 }
+
+h4 {
+  font-size: 18px;
+}
+
 
 #hero {
   padding-bottom: 0px;
@@ -365,6 +316,7 @@ h3 {
 
 .footer-buttons {
   padding-right: 30px;
+  vertical-align: center;
 }
 
 footer {
@@ -375,10 +327,52 @@ footer {
     width: 30%; 
     max-width: 150px;
     min-width: 50px;
-    display: block;
+  }
+
+  #hero { padding-bottom: 80px; background: url(/img/background-image.png) no-repeat center center fixed !important; -webkit-background-size: cover !important; -moz-background-size: cover !important; -o-background-size: cover !important; background-size: cover !important; }
+
+  #about-picture {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+  }
+
+  
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
   }
 
 
+  
+  
 
  /* ==============================
 Medium devices (640px and larger)
@@ -391,6 +385,8 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .row::after {
@@ -399,31 +395,66 @@ Medium devices (640px and larger)
     display: table;
   }
 
-  body {
+  p {
     font-size: 18px; /* Sets the font size to 18px */
   }
 
   .hero-container {
     padding-top: 175px;
     padding-bottom: 175px;
-    padding-right: 20px;
-    padding-left: 30px;
-    padding-right: 50x;
+    padding-left: 50px;
+    padding-right: 50px;
     border-left: 0px;
     border-right: 0px;
     text-size-adjust: auto;
   }
 
-  .hero {
+  h1 {
+    font-size: 35px;
+  }
+  
+  h2 {
+    font-size: 30px; 
+    padding-left: 50px;
+    padding-bottom: 25px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+  .topnav{
+    float: right;
+    color: #E8DEDB;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 0px;
+    padding-top: 23px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  #footerlogo {
+    width: 20%; 
+    max-width: 150px;
+    min-width: 50px;
+    padding-left: 30px;
+  }
+
+  #logo {
+    padding-top: 10px;
+     padding-left: 10px;
+   }
+
+   .hero-inner {
     display:block ;
-    padding-top: 50px;
-    padding-bottom: 0px;
+    padding-top: 100px;
+    padding-bottom: 25px;
     padding-left: 50px;
     padding-right: 50px;
-    margin-bottom: 0px;
-    border-bottom: 0px;
-    border-right: 0px;
-    text-align: center;
+    margin: 0px 0px;
+    text-align: left;
+  
   }
 
 
@@ -433,12 +464,39 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+  h1 {
+    font-size: 50px;
+  }
   
-  .col-lg-5 {width: 50%;}
-  .col-lg-7 {width: 50%;}
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .hero-inner {
+    display:block;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 50px;
+    margin: 0px 0px;
+    text-align: left;
+  
+  }
+
+  img {width: 100%;}
+
+  .col-lg-5 {width: 40%;}
+  .col-lg-7 {width: 60%;}
 
   [class*="col-"] {
     float: left;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .container {
@@ -447,9 +505,80 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 
+  #about-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero-container {
+    padding-top: 200px;
+    padding-bottom: 150px;
+    padding-right: 200px;
+    padding-left: 75px;
+    border-left: 0px;
+    border-right: 0px;
+    font-size: 55px;
+  }
+
+  .topnav{
+    float: right;
+    color: #E8DEDB;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 0px;
+    padding-top: 23px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+
+  .container {
+    padding: 0 50px;
+  }
+
+  .footer-buttons {
+    padding-right: 50px;
+    display: inline;
+    vertical-align: middle;
+  }
+
+  .container-work {
+    padding: 30px;
+  }
+
+  footer {
+    padding-bottom: 20px;
+    padding-top: 20px;}
+    
+    #footerlogo {
+      width: 20%; 
+      max-width: 150px;
+      min-width: 50px;
+      display: inline;
+      vertical-align: middle;
+    }
+
+    #logo {
+      width: 5%;
+     padding-top: 10px;
+      padding-left: 10px;
+    }
+
+    .hr {width: 95%;}
+
+    .aboutimage {
+      width: 80%;
+      padding-top: 0px;
+    }
+
+     .center {width: 40%;}
+  
 }
 
-#about-image {
-  width: 100%;
-  max-width: 100%;
-  height: auto;}
+
+
+
+
+
