@@ -512,7 +512,7 @@ Large devices (1024px or larger)
   }
 
   .hero-container {
-    padding-top: 200px;
+    padding-top: 175px;
     padding-bottom: 150px;
     padding-right: 200px;
     padding-left: 75px;
@@ -574,6 +574,17 @@ Large devices (1024px or larger)
     }
 
      .center {width: 40%;}
+
+     .about-text {
+      margin-top: -50px;
+     }
+
+     .about-image {
+      width: 90%;
+      height: auto;
+      margin-top: -200px;
+     }
+
   
 }
 
