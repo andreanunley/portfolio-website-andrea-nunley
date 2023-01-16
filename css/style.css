@@ -266,8 +266,7 @@ height:"auto";
 }
 
 .footer-buttons {
-  float: right;
-  padding-right: 30px;
+  vertical-align: center;
 }
 
 footer {
@@ -441,6 +440,12 @@ Medium devices (640px and larger)
     padding-left: 30px;
   }
 
+  .footer-buttons {
+    vertical-align: middle;
+    padding-right: 0px;
+    float: right;
+  }
+
   #logo {
     padding-top: 10px;
      padding-left: 10px;
@@ -454,8 +459,6 @@ Medium devices (640px and larger)
     padding-right: 50px;
     margin: 0px 0px;
     text-align: left;
-  
-  }
 
 
 }
@@ -539,9 +542,9 @@ Large devices (1024px or larger)
   }
 
   .footer-buttons {
-    padding-right: 50px;
-    display: inline;
     vertical-align: middle;
+    padding-right: 0px;
+    float: right;
   }
 
   .container-work {
@@ -557,7 +560,7 @@ Large devices (1024px or larger)
       max-width: 150px;
       min-width: 50px;
       display: inline;
-      vertical-align: middle;
+      vertical-align: center;
     }
 
     #logo {
@@ -587,9 +590,4 @@ Large devices (1024px or larger)
 
   
 }
-
-
-
-
-
 
