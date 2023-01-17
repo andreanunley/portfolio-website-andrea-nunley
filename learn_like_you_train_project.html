@@ -41,13 +41,15 @@
   <div class="section">
     <header>
       <div>
-        <img id="logo" src="img/new-logo-transparent.png" alt= Logo">
-        <nav>
+        <div class="navtoggle" id="myNavtoggle">
+          <img id="logo" src="img/new-logo-transparent.png" alt= Logo">
+          <nav>
           <ul class="topnav">
             <li><a href="index.html" class="active">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="learn_like_you_train_project.html" class="active">PROJECTS</a></li>
             <li><a href="#contact">CONTACT</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
       </div>
@@ -926,7 +928,7 @@
   <footer id="contact">
     <div id="footer">
 <br>
-      <div class="container-work">
+      <div class="footer-work">
         <img id="footerlogo" src="img/new-logo-transparent.png" alt= "Logo">
       
 
@@ -949,8 +951,8 @@
       <center><p>Copyright Andrea Nunley 2022</p></center>
   </div>
   
-<script src="[ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js]"></script>
-<script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 
   </body>
   </html>
