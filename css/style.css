@@ -74,7 +74,7 @@ Supplementary Color (White): #FFFFFF;
   }
 
   a:active { /* selected link */
-    color: #E8DEDB;
+    color: #FFFFFF;
   }
 
   .button {
@@ -223,9 +223,9 @@ nav > ul > li > a:hover{
 .hero-inner {
   display:block ;
   padding-top: 150px;
-  padding-bottom: 25px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   margin: 0px 0px;
   text-align: left;
 
@@ -319,7 +319,7 @@ h4 {
 }
 
 footer {
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   padding-top: 20px;}
   
   #footerlogo {
@@ -371,6 +371,17 @@ footer {
 
 
   
+  @media only screen and (max-width: 600px) {
+    .container-work{
+    text-align: center;
+    }
+    
+    .footer-buttons {
+    padding: 0;
+    }
+
+    }
+
   
 
  /* ==============================
@@ -454,8 +465,8 @@ Medium devices (640px and larger)
    .hero-inner {
     display:block ;
     padding-top: 100px;
-    padding-bottom: 25px;
-    padding-left: 50px;
+    padding-bottom: 0px;
+    padding-left: 30px;
     padding-right: 50px;
     margin: 0px 0px;
     text-align: left;
@@ -474,17 +485,23 @@ Large devices (1024px or larger)
   
   h2 {
     font-size: 40px;
+    padding-left: 0px;
+    padding-bottom: 0px;
   }
 
   h3 {
     font-size: 30px;
   }
 
+  h4 {
+    font-size: 23px;
+  }
+
   .hero-inner {
     display:block;
     padding-top: 150px;
     padding-bottom: 30px;
-    padding-left: 100px;
+    padding-left: 30px;
     padding-right: 50px;
     margin: 0px 0px;
     text-align: left;
@@ -590,4 +607,4 @@ Large devices (1024px or larger)
 
   
 }
-
+}
