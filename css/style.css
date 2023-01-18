@@ -690,6 +690,9 @@ Large devices (1024px or larger)
     display: none;
   }
 
-  
+  ul.topnav  {width: auto;
+    margin-right: 10px;
+  }
+      
 }
 }
