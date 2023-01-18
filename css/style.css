@@ -73,8 +73,8 @@ Supplementary Color (White): #FFFFFF;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
 
-  a:active { /* selected link */
-    color: #FFFFFF;
+  .active { /* selected link */
+    color: #FFFFFF!important;
   }
 
   .button {
@@ -381,16 +381,39 @@ footer {
 
     .navtoggle li:not(:last-child) {
       display: none;
-    }
-
-    .navtoggle.responsive li  {
+  }
+  
+  .navtoggle, .navtoggle.responsive {
+      position: relative;
+  }
+  
+  .navtoggle li .icon {
+      position: absolute;
+      right: 0;
+      top: 2px;
+      font-size: 24px;
+      margin: 10px 10px 10px 0;
+  }
+  
+  .navtoggle.responsive nav {
+      padding: 24px 0 0;
+      min-height: 100vh;
+      
+  }
+  
+  .navtoggle.responsive li {
       display: block;
-    }
+      padding: 10px 0;
+  }
+  
+  .navtoggle.responsive li:last-child {
+      padding: 0 0 10px;
+  }
 
-    .navtoggle.responsive nav {
-      background-color: black;
-    }
-
+  ul.topnav  {width: 100%;
+  margin-right: 0px;
+}
+  
 
     }
 
@@ -470,8 +493,7 @@ Medium devices (640px and larger)
   }
 
   #logo {
-    padding-top: 0px;
-     padding-left: 10px;
+    padding-top: 5px;
      max-width: 250px;
    }
 
@@ -486,12 +508,39 @@ Medium devices (640px and larger)
 
     .navtoggle li:not(:last-child) {
       display: none;
-    }
-
-    .navtoggle.responsive li  {
+  }
+  
+  .navtoggle, .navtoggle.responsive {
+      position: relative;
+  }
+  
+  .navtoggle li .icon {
+      position: absolute;
+      right: 0;
+      top: 2px;
+      font-size: 24px;
+      margin: 10px 10px 10px 0;
+  }
+  
+  .navtoggle.responsive nav {
+      padding: 24px 0 0;
+      min-height: 100vh;
+      
+  }
+  
+  .navtoggle.responsive li {
       display: block;
-    }
+      padding: 10px 0;
+  }
+  
+  .navtoggle.responsive li:last-child {
+      padding: 0 0 10px;
+  }
 
+  ul.topnav  {width: 100%;
+  margin-right: 0px;
+}
+  
 
 /* ==============================
 Large devices (1024px or larger)
