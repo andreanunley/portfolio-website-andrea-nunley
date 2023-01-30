@@ -210,6 +210,10 @@ nav > ul > li > a:hover{
 }
 
 .hr {width: 90%;}
+
+.centerend {
+  text-align: center;
+}
   
 
 /* Layout styling */
